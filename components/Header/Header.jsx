@@ -8,15 +8,28 @@ function Header(){
             <ul>
             
               <li>
-                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/' style={({isActive})=>({
+                  color: isActive ? "red":'black',
+                })}
+                
+                >Home</NavLink>
               </li>
 
               <li>
-                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/about' style={({isActive})=>({
+                  color : isActive?'red':'black',
+                })}
+                
+                 >About</NavLink>
               </li>
               
               <li>
-                <NavLink to='/contact'>Contact-us</NavLink>
+                <NavLink to='/contact' style={({isActive})=>({
+                  color : isActive?'red':'black',
+                })}
+                
+                
+                >Contact-us</NavLink>
               </li>
             
             </ul>         
