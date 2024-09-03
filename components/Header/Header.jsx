@@ -31,6 +31,15 @@ function Header(){
                 
                 >Contact-us</NavLink>
               </li>
+
+              <li>
+                <NavLink to='/github' style={({isActive})=>({
+                  color : isActive?'red':'black',
+                })}
+                
+                
+                >Github</NavLink>
+              </li>
             
             </ul>         
           </nav>
